@@ -132,27 +132,28 @@ BLOB: хранит двоичные данные в виде строки дли
 MEDIUMBLOB: хранит двоичные данные в виде строки длиной до 16 МБ
 
 LONGBLOB: хранит двоичные данные в виде строки длиной до 4 ГБ
-
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Практическая 1
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Выберите из таблицы orders все заказы
 ВЫБРАТЬ * ИЗ заказов
 
-изображение
+[изображение](https://private-user-images.githubusercontent.com/184487511/413521601-b85a30cc-c42c-4e24-bf36-e3fb84c1b15c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDQ2MzU5MjgsIm5iZiI6MTc0NDYzNTYyOCwicGF0aCI6Ii8xODQ0ODc1MTEvNDEzNTIxNjAxLWI4NWEzMGNjLWM0MmMtNGUyNC1iZjM2LWUzZmI4NGMxYjE1Yy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNDE0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDQxNFQxMzAwMjhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05Y2YxNWZjYzI1MDU3ZTg4OTVmMDgzZjliNzJhODE3NjkxNjdkNGU5Njc4MTI5YjcxODllOTk3ZjVmMDgxY2EwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.XPQsSXFoZ2OgpCO5CBTdZvejsGvwt0vkMmEF60ouU9U)
 
 Выберите из таблицы orders все заказы, кроме новых. У новых заказов статус равен «новый». Использовать in
 
-изображение
+[изображение](https://private-user-images.githubusercontent.com/184487511/413521645-1bf95e40-ca77-49ce-8bd4-ff2a2fbf3d7c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDQ2MzU5MjgsIm5iZiI6MTc0NDYzNTYyOCwicGF0aCI6Ii8xODQ0ODc1MTEvNDEzNTIxNjQ1LTFiZjk1ZTQwLWNhNzctNDljZS04YmQ0LWZmMmEyZmJmM2Q3Yy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNDE0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDQxNFQxMzAwMjhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0zOTI4OWM3MjA2YmIyMTU2ZTNlYjI5OGY4ZDI3MjE5OTMyYTk4MzVhYTIzNDZiYzU4YzVhMTg5MDdmMWJiMWIyJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.w4IbIiRdI95ZsM3v85aXIpIAwT0Sc8N9KKGjSbcg5po)
 
 ВЫБЕРИТЕ * ИЗ заказов, СТАТУС КОТОРЫХ ОТСУТСТВУЕТ ("новый")
 
 Выберите из таблицы orders все новые и отмененные заказы. У отмененных заказов статус равен «отменен». У новых заказов статус равен «новый».
 
-изображение
+[изображение](https://private-user-images.githubusercontent.com/184487511/413521678-53dab5dd-d85d-45ce-be2c-65686806aebb.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDQ2MzU5MjgsIm5iZiI6MTc0NDYzNTYyOCwicGF0aCI6Ii8xODQ0ODc1MTEvNDEzNTIxNjc4LTUzZGFiNWRkLWQ4NWQtNDVjZS1iZTJjLTY1Njg2ODA2YWViYi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNDE0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDQxNFQxMzAwMjhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xMjJmNjJhNDY4MGMwNjJmYTFiYWExNDYxZmJkNDk3YWUzOGFjNTAxNjgwNzY0MGEyNTc1NDc2ODAzMDdhODUwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.jBL_av25wqP0NXDYyk1Xpr5GXEp-qXoDeTuKGz5vFow)
 
 ВЫБЕРИТЕ * ИЗ ЗАКАЗОВ ГДЕ СТАТУС В («новый», «отменённый»)
 
 Выберите из таблицы orders все заказы, содержащие более 3 товаров (products_count). Вывести нужно только номер (id) и сумму (sum) заказа.
-изображение
+[изображение](https://private-user-images.githubusercontent.com/184487511/413521713-de56a56a-7c6a-42b0-9d07-4df95b99d87c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDQ2MzU5MjgsIm5iZiI6MTc0NDYzNTYyOCwicGF0aCI6Ii8xODQ0ODc1MTEvNDEzNTIxNzEzLWRlNTZhNTZhLTdjNmEtNDJiMC05ZDA3LTRkZjk1Yjk5ZDg3Yy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNDE0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDQxNFQxMzAwMjhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05YjVlNTdjY2RkZTJhOTY1NGUwYzFmMmJiNGQ2ZmQ1ZGYwZjc5NzU5ZmNjNzQyZTc0NTAzMGI2OWY2NGNhOTNmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.sqbnMA8cFTdLsMH3x0V1CJX9_YVIk0h6m2ETmwQjEMM)
 
 ВЫБЕРИТЕ идентификатор, сумму ИЗ заказов, ГДЕ products_count > 3
 

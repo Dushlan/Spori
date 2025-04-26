@@ -573,3 +573,6 @@ SELECT name, count, price
 FROM products
 WHERE price <= 3000
 ORDER BY name ASC
+
+![image](https://github.com/user-attachments/assets/ce84bb24-da17-4b9e-abad-130eedbefe07)
+

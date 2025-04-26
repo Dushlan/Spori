@@ -539,3 +539,37 @@ INSERT INTO products (name, count, price) VALUES ('Сникерс', 12, 50.80);
 SELECT * FROM products;
 
 ![image](https://github.com/user-attachments/assets/fa6c57d8-0cd9-4a69-9d6a-2f9815846534)
+
+
+
+
+# Экзамен 
+
+![image](https://github.com/user-attachments/assets/2080b363-a5e7-46c6-a1ad-07b7a822de01)
+
+Напишите тренировочный код для задания: Выберите из таблицы products все товары стоимостью до 3000 рублей отсортированные в алфавитном порядке. Вывести нужно только имя (name), количество (count) и цену (price). Внимание!Не забудьте про удаление таблицы, если она существует (именно удаление). Код (ВЕСЬ) в одном файле. Решение задачи также необходимо.
+
+DROP TABLE IF EXISTS products;
+
+CREATE TABLE products (
+    id INT UNSIGNED NOT NULL PRIMARY KEY auto_increment, 
+    name VARCHAR(100),      
+    count INT,              
+    price DECIMAL(10, 2)    
+);
+
+INSERT INTO products (name, count, price) VALUES 
+('Стиральная машина', 5, 10000.00), 
+('Холодильник', 0, 10000.00), 
+('Микроволновка', 3, 4000.00), 
+('Пылесос', 2, 4500.00), 
+('Вентилятор', 0, 700.00),
+('Телевизор', 7, 31740.00), 
+('Тостер', 2, 2500.00), 
+('Принтер', 4, 3000.00), 
+('Активные колонки', 1, 2900.00);
+
+SELECT name, count, price
+FROM products
+WHERE price <= 3000
+ORDER BY name ASC
